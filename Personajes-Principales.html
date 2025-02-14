@@ -22,140 +22,127 @@
 
     <!--------------------------Encabezado----------------------------------->
     <header>
-        <svg width="150" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" stroke="#1C274C" stroke-width="1.5"/><circle opacity=".5" cx="12" cy="12" r="2" stroke="#1C274C" stroke-width="1.5"/><circle cx="19" cy="12" r="2" stroke="#1C274C" stroke-width="1.5"/></svg>
-        <source> <img src="img/Chainsaw_Man_(Japanese)_logo.svg.png"></source>
-        <svg width="150" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px}</style></defs><g id="cart"><circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/><circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/><path class="cls-1" d="M.52 1.5h2.66a2.87 2.87 0 0 1 2.74 2l3.19 10.41h-.47a2.39 2.39 0 0 0-2.39 2.39 2.39 2.39 0 0 0 2.39 2.38h10"/><path class="cls-1" d="M7.21 5.32h15.27v1.91l-1.91 6.68H9.11"/></g></svg>
+        <div class="header-left">
+            <button class="open-btn" onclick="openSidebar()">☰</button>
+        </div>
+        <div class="header-center">
+            <img src="img/Chainsaw_Man__Japanese__logo.svg.svg" alt="Chainsaw Man Logo">
+        </div>
+        <div class="header-right">
+            <img src="img/shop-cart-svgrepo-com.svg" alt="Carrito de compras">
+        </div>
     </header>
-     
+
+    <!-- Menú desplegable lateral -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <a href="#">Tienda</a>
+        <a href="#">Contacto</a>
+        <a href="#">Enciclopedia</a>
+    </div>
     
-
-    <h1>PERSONAJES</h1>
-
-    <img src="img/personajes.jpeg" alt="img/personajes.jpeg"  class="personajes">
-
-    <h2>Personajes principales</h2>
-
-    </article>
-
-
-    <section class="list_characters">
-        
-    <article>
-        <p>Denji</p>
-            <img src="img/Denji.jpg" alt="Denji" class="img_characters">
-    </article>
-
-    <article>
-        <p>Makima</p>
-            <img src="img/Makima.jpg" alt="Makima"class="img_characters">
-    </article>
+    <main style="padding-top: 120px;">
+        <h1>PERSONAJES</h1>
+        <img class="portada-personajes" src="img/personajes.jpeg" alt="Personajes de Chainsaw Man">
+        <h2>Personajes principales</h2>
+        <section class="list_characters">
+            <!-- Personajes principales -->
+            <article>
+                <p>Denji</p>
+                <img src="img/Denji.jpg" alt="Denji" class="img_characters">
+            </article>
+            <article>
+                <p>Makima</p>
+                <img src="img/Makima.jpg" alt="Makima" class="img_characters">
+            </article>
+            <article>
+                <p>Aki Hayakawa</p>
+                <img src="img/Aki.jpg" alt="Aki" class="img_characters">
+            </article>
+            <article>
+                <p>Power</p>
+                <img src="img/Power.webp" alt="Power" class="img_characters">
+            </article>
+            <article>
+                <p>Asa Mitaka</p>
+                <img src="img/Asa_Mitaka.webp" alt="Asa" class="img_characters">
+            </article>
+        </section>
     
-    <article>
-        <p>Aki Mayakawa</p>
-            <img src="img/Aki.jpg" alt="Aki"class="img_characters">
-    </article>  
-    
-    <article>
-        <p>Power</p>
-            <img src="img/Power.webp" alt="Power"class="img_characters">
-        </article>        
-    <article>        
-        <p>Asa Mitaka</p>
-            <img src="img/Asa_Mitaka.webp" alt="Asa"class="img_characters">
-    </article>    
-    </section>
-
-    <h3>Cazadores del Departamento de Seguridad Pública</h3>
-    
-    <section class="list_characters">
-    <article> 
-        <p>Kishibe</p>
-        <img src="img/kishibe.webp" alt="Kishibe"class="img_characters">
-    </article>
-
-    <article>
-        <p>Himeno</p>
-        <img src="img/Himeno.jpg" alt="Himeno"class="img_characters">
-    </article>   
-
-    <article> 
-        <p>Kobeni Higashiyama</p>
-        <img src="img/kobeni.jpg" alt="Kobeni" class="img_characters">
-    </article>   
-
-    <article> 
-        <p>Hirokazu Arai</p>
-        <img src="img/hirokazu.webp" alt="Hirokazu" class="img_characters">
-    </article>   
-    </section>
+        <h3>Cazadores del Departamento de Seguridad Pública</h3>
+        <section class="list_characters">
+            <!-- Cazadores -->
+            <article>
+                <p>Kishibe</p>
+                <img src="img/kishibe.webp" alt="Kishibe" class="img_characters">
+            </article>
+            <article>
+                <p>Himeno</p>
+                <img src="img/Himeno.jpg" alt="Himeno" class="img_characters">
+            </article>
+            <article>
+                <p>Kobeni Higashiyama</p>
+                <img src="img/kobeni.jpg" alt="Kobeni" class="img_characters">
+            </article>
+            <article>
+                <p>Hirokazu Arai</p>
+                <img src="img/hirokazu.webp" alt="Hirokazu" class="img_characters">
+            </article>
+        </section>
+    </main>
 <!----------------------------------------------------------->
 <!----------------Formularios y encuestas-------------------->
 <!----------------------------------------------------------->
 
-    <form>
-        <h4>¡Encuesta!</h4>
-        <p>Querido lector, por favor, tomate un momento para relizar la siguiente encuesta, ¡No te tomará 2 minutos!<p>
-        
-        <fieldset>
-            <legend>Datos del lector</legend>
-            
+<form>
+    <h4>¡Encuesta!</h4>
+    <p>Querido lector, por favor, tómate un momento para realizar la siguiente encuesta. ¡No te tomará más de 2 minutos!</p>
+    
+    <fieldset>
+        <legend>Datos del lector</legend>
         <div>
-            <label for="Edad">Edad del lector</label>  
-            <input type="text" name= "edad" placeholder="¿Cual es tu edad?">
+            <label for="edad">Edad del lector</label>
+            <input type="number" id="edad" name="edad" placeholder="¿Cuál es tu edad?" required>
         </div>
-
-        <div>                
-            <label for="país">¿De qué país eres?</label>  
-            <input type="text" name= "país" placeholder="¿Cual es tu País?">
-        </div>
-        </fieldset>
-        <fieldset>
-            <legend>Preferencias</legend>
-        <div> 
-            <p class="cuestion-label-1">Hasta ahora, ¿Qué parte del manga te gusta más?</p>
-
-            <input type="radio" name="parte 1" value="parte 1">Parte 1</br>
-            <input type="radio" name="parte 2" value="parte 2">Parte 2</br>
-        </div>
-
         <div>
-            <p class="cuestion-label-2">¿Cual es tu personaje favorito?</p>
-            <select>Personaje
+            <label for="pais">¿De qué país eres?</label>
+            <input type="text" id="pais" name="pais" placeholder="¿Cuál es tu país?" required>
+        </div>
+    </fieldset>
 
+    <fieldset>
+        <legend>Preferencias</legend>
+        <div>
+            <p>Hasta ahora, ¿qué parte del manga te gusta más?</p>
+            <label><input type="radio" name="parte" value="parte1"> Parte 1</label><br>
+            <label><input type="radio" name="parte" value="parte2"> Parte 2</label>
+        </div>
+        <div>
+            <p>¿Cuál es tu personaje favorito?</p>
+            <select id="personaje" name="personaje">
                 <option value="denji">Denji</option>
                 <option value="makima">Makima</option>
-                <option value="aki">Aki Mayakawa</option>
+                <option value="aki">Aki Hayakawa</option>
                 <option value="power">Power</option>
                 <option value="asa">Asa Mitaka</option>
                 <option value="otro">Otro</option>
-                
             </select>
-
         </div>
+        <div>
+            <label for="razon">¿Por qué es tu personaje favorito?</label>
+            <textarea id="razon" name="razon" placeholder="Cuéntanos..." rows="4"></textarea>
+        </div>
+    </fieldset>
 
-        <article>
-            <label for="favorite-character-reason">¿Por qué es tu personaje favorito?</label></br>
-            <textarea name="por que es tu personaje favorito" placeholder="Cuentanos"></textarea>
-        </article>
-        <article>
-            <input type="submit" value="Enviar Encuesta">
-        </article>
-
-            </fieldset>
-
-    
-    </form>
+    <button type="submit">Enviar Encuesta</button>
+</form>
 <!------------------------------------------------------------------>   
 <!---------------------------pie de página-------------------------->
 <!------------------------------------------------------------------>
-    <footer>
-        <small>&copy;Esta página se edito&#769; por última vez el 27 de Nov de 2024 &xcirc;</small>
-    </footer>
-
-
-
-
-
+<footer>
+    <small>&copy; Esta página se editó por última vez el 11 de Febrero de 2025</small>
+</footer>
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
 

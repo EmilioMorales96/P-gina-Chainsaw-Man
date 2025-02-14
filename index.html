@@ -15,10 +15,38 @@
     <main>
         <!--------------------------Encabezado----------------------------------->
         <header>
-            <svg width="150" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="12" r="2" stroke="#1C274C" stroke-width="1.5"/><circle opacity=".5" cx="12" cy="12" r="2" stroke="#1C274C" stroke-width="1.5"/><circle cx="19" cy="12" r="2" stroke="#1C274C" stroke-width="1.5"/></svg>
-            <source> <img src="img/Chainsaw_Man_(Japanese)_logo.svg.png"></source>
-            <svg width="150" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px}</style></defs><g id="cart"><circle class="cls-1" cx="10.07" cy="20.59" r="1.91"/><circle class="cls-1" cx="18.66" cy="20.59" r="1.91"/><path class="cls-1" d="M.52 1.5h2.66a2.87 2.87 0 0 1 2.74 2l3.19 10.41h-.47a2.39 2.39 0 0 0-2.39 2.39 2.39 2.39 0 0 0 2.39 2.38h10"/><path class="cls-1" d="M7.21 5.32h15.27v1.91l-1.91 6.68H9.11"/></g></svg>
+            <!-- Contenedor del icono del menú -->
+            <div class="header-left">
+                <button class="open-btn" onclick="openSidebar()">☰</button>
+            </div>
+        
+            <!-- Contenedor del logo -->
+            <div class="header-center">
+                <img src="img/Chainsaw_Man__Japanese__logo.svg.svg">
+                    <!-- Código del SVG del logo -->
+                </svg>
+            </div>
+        
+            <!-- Contenedor del icono del carrito -->
+            <div class="header-right">
+                 <img src= "img/shop-cart-svgrepo-com.svg"  alt = "carrito de compras">
+                
+                    <!-- Código del SVG del carrito -->
+                </svg>
+            </div>
         </header>
+        
+        <!-- Menú desplegable lateral -->
+        <div id="sidebar" class="sidebar">
+            <button class="close-btn" onclick="closeSidebar()">×</button>
+            <a href="#">Tienda</a>
+            <a href="#">Contacto</a>
+            <a href="#">Enciclopedia</a>
+        </div>
+
+        <!-- Botón para abrir el menú -->
+        <button class="open-btn" onclick="openSidebar()">☰</button>
+
 
         <!------------------------Sección de busqueda----------------------------->
         <section>
@@ -31,12 +59,12 @@
         </section>
 
         <!------------------------------Introducción------------------------------->
-        <section>
+        <section class="portada-section">
             <h1>Chainsaw Man</h1>
 
             <p> <span>Chainsaw Man</span> (チェンソーマン Chensō Man, lit. Hombre Motosierra) es una serie de manga japonés escrita e ilustrada por Tatsuki Fujimoto.</p>
         
-            <img id="portada" src="img/portada.avif" height="500px"  alt="ortada Chainsaw Man">
+            <img id="portada" src="img/portada.avif"  alt="Titulo de encabezado Chainsaw Man">
         </section>
         
         <!--Sinopsis-->
@@ -49,7 +77,7 @@
         <article class="trailer-section">
             <section>
                 <h3 class="trama">Trailer</h3>
-                <video controls width="1000px">     
+                <video controls width="600px" max width="100%">     
                     <source src="assets/Chainsaw Man _ TRÁILER OFICIAL.mp4" type="video/mp4">
                 </video>
             </section>
@@ -78,7 +106,7 @@
             <h3>Contenido de la obra</h3>
             <h3>Manga</h3>
 
-            <table id="mangas" border="6">
+            <table id="mangas" >
                 <tr>
                     <th>Volumen 01 "Perro y Motosierra</th> 
                     <th>Volumen 02 "Motosierra vs Murciélago"</th>
@@ -88,10 +116,10 @@
 
                 <!--agregar más volumenes-->
                 <tr>
-                    <td><img src="img/Chainsawman vol 1.jpg" height="200px" alt="Chainsaw vol 1.jpg" class="tablaMangas"></td>
-                    <td><img src="img/Chainsawman vol 2.jpg"height="200px" alt="Chainsawman vol 2.jpg"class="tablaMangas"></td>
-                    <td><img src="img/Chainsaw vol 3.jpg"height="200px" alt="Chainsaw vol 3.jpg" class="tablaMangas"></td>
-                    <td><img src="img/Chainsaw vol 4.jpg"height="200px" alt="Chainsaw vol 4.jpg" class="tablaMangas"></td>
+                    <td><img src="img/Chainsawman vol 1.jpg"  alt="Chainsaw vol 1.jpg" class="tablaMangas"></td>
+                    <td><img src="img/Chainsawman vol 2.jpg" alt="Chainsawman vol 2.jpg"class="tablaMangas"></td>
+                    <td><img src="img/Chainsaw vol 3.jpg" alt="Chainsaw vol 3.jpg" class="tablaMangas"></td>
+                    <td><img src="img/Chainsaw vol 4.jpg" alt="Chainsaw vol 4.jpg" class="tablaMangas"></td>
                 </tr>
             </table>   
             
@@ -106,8 +134,9 @@
     <!--aviso de cuando se editó por ultima vez esta página-->
 
     <footer>
-    <small>&copy;Esta página se edito&#769; por última vez el 04 de Diciembre de 2024 &xcirc;</small>
+    <small>&copy;Esta página se edito&#769; por última vez el 11 de Febrero de 2025 &xcirc;</small>
     </footer>    
     </main>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
